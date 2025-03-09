@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="display" disabled />
+      <div class="buttons">
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button data-operation="add">+</button>
+
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button data-operation="subtract">-</button>
+
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button data-operation="multiply">*</button>
+
+        <button data-value="0">0</button>
+        <button data-operation="squareRoot">√</button>
+        <button data-operation="power">^</button>
+        <button data-operation="divide">/</button>
+
+        <button data-operation="clear">C</button>
+        <button data-operation="backspace">←</button>
+        <button data-operation="toggleSign">+/-</button>
+        <button data-operation="calculate">=</button>
+      </div>
+    </div>
+    <script type="module" src="src/main.ts"></script>
+  </body>
+</html>
