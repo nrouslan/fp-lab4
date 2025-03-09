@@ -6,14 +6,14 @@ export const subtract: Operation = (a, b) => a - b!;
 export const multiply: Operation = (a, b) => a * b!;
 export const divide: Operation = (a, b) => {
   if (b === 0) {
-    throw new Error("Разделить на ноль нельзя");
+    throw new Error("Нельзя поделить на ноль");
   }
   return a / b!;
 };
 export const power: Operation = (a, b) => Math.pow(a, b!);
 export const squareRoot: Operation = (a) => {
   if (a < 0) {
-    throw new Error("Взять квадратный корень из отриц. числа нельзя");
+    throw new Error("Нельзя взять квадратный корень из отриц. числа");
   }
   return Math.sqrt(a);
 };
